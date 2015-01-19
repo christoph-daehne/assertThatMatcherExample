@@ -1,0 +1,8 @@
+build/
+.gradle/
+gradle
+gradlew
+AssertThatMatcherExample.iml
+AssertThatMatcherExample.ipr
+AssertThatMatcherExample.iws
+gradlew.bat

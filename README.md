@@ -11,7 +11,7 @@ It can make life much more pleasant to have well-written tests in your project.
 They usually increase my joy and productivity at work.
 
 However they do not write and maintain themselves.
-To avoid spending hours in fixing (and reading) test-code and let tests become great obstacles during development they need to be written with care.
+To avoid spending hours in fixing (and reading) test-code and let tests become great obstacles during development, they need to be written with care.
 I want to be honest: Tests I write are hardly as accurate as the productive code but still I consider them far from being hard-to-read copy-pasted spaghetti code. You know what I mean.
 
 Here I want to show one approach I use to validate complex objects and object graphs without messing up my test code.
@@ -57,7 +57,7 @@ assertEquals expectedPerson, actualPerson
 This might actually work depending on the implementation of ```equals()``` and ```hashCode()```
 but in our example it would compare the persons by object reference.
 
-Even if the content would be validated the way I want in this test
+Even if the content would be validated the way I want in this test,
 the failure message would be only contain the ```toString()``` results
 - possibly only the ```nickname```.
 
@@ -71,7 +71,7 @@ assertEquals "incorrect name", expected.name, actual.name
 This is slightly better than the approach before.
 It compares the persons by content and the failure messages are really helpful.
 
-### thinks get more complex
+### things get more complex
 
 For now the **eager approach** may just work out.
 One could even put the two lines into an extra method ```assertPerson```.
@@ -119,7 +119,7 @@ This example contains two ```Person``` matchers.
 ### simple person matcher
 
 The ```PersonMatchers.PersonMatcher``` contains a straight forward implementation of a matcher validating a ```Person```.
-The matcher does already validate all children, grand-children, grant-grant-children and so on.
+The matcher does already validate all children, grand-children, great-grand-children and so on.
 It does not support reference cycles though.
 
 With the comparison code hidden in the ```PersonMatcher``` the test code looks very neat.

@@ -1,6 +1,5 @@
 # How to write better tests using assertThat
 
-The content of this README file is available in German as well at [sandstorm-media.de(TODO:link)](http://sandstorm-media.de).
 All example code is written in [Groovy](http://groovy.codehaus.org/).
 
 ## testing can be wonderful
